@@ -38,21 +38,11 @@ namespace MethodsPracticeSummer17
 
             //Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle);
 
-            double hoursWorked = 42.3d;
-            double hourlyWage = 12.50d;
+            double myHours = 42.3d;
+            double myPay = 12.50d;
 
-            Console.WriteLine("Your monthly wage is {0}.", WageCalculator(hoursWorked, hourlyWage));
-            
-
-            
-
-
-
-
-
-
-
-
+            Console.WriteLine("Your monthly wage is {0}.", WageCalculator(myHours, myPay));
+   
 
         }
 
@@ -118,6 +108,13 @@ namespace MethodsPracticeSummer17
             double monthlyWage = (hoursWorkedWeekly * 52 * hourlyWage) / 12;
             return monthlyWage;
         }
+
+        //Create two methods of your choosing. At least one of the methods should have a non-void
+        //return type.
+        //Both of the methods should take at least one parameter.
+        //Remember when naming your method that it should represent what your method does.
+        //Your method should only aim to accomplish one thing.
+        //Be creative.
 
 
     }
