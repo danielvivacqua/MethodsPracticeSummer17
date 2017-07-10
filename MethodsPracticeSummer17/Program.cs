@@ -31,12 +31,27 @@ namespace MethodsPracticeSummer17
             //RobotWarning("Will Robinson");
             //Useless();
 
-            string myBirthMonth = "September";
-            string myFriendBirthMonth = "December";
-            string myVehicle = Vehicle(myBirthMonth);
-            string myFriendVehicle = Vehicle(myFriendBirthMonth);
+            //string myBirthMonth = "September";
+            //string myFriendBirthMonth = "December";
+            //string myVehicle = Vehicle(myBirthMonth);
+            //string myFriendVehicle = Vehicle(myFriendBirthMonth);
 
-            Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle);
+            //Console.WriteLine("My future vehicle is {0} and Jordan's future vehicle {1}.", myVehicle, myFriendVehicle);
+
+            double hoursWorked = 42.3d;
+            double hourlyWage = 12.50d;
+
+            Console.WriteLine("Your monthly wage is {0}.", WageCalculator(hoursWorked, hourlyWage));
+            
+
+            
+
+
+
+
+
+
+
 
 
         }
@@ -83,6 +98,26 @@ namespace MethodsPracticeSummer17
             return vehicleFortune;
         }
 
+        //Create a method called FavoriteFood
+        //It should take two string parameters. One representing a name, and the other representing
+        //a favorite food.
+        //The return type should be void
+        //The method should concatenate
+
+        //Create a method called RetirementCalculator
+        //It should take an int as a parameter representing the user's age
+        //The method should calculate how many more years until the user retires using 65 as the
+        //age of retirement.
+        //The return type should not be void, should be an int
+        //Once it calculates the user's retirement age it should print 
+        //"The user will retire in X years" where X represents the value that was calculated
+
+        public static double WageCalculator(double hoursWorkedWeekly, double hourlyWage)
+        {
+            //This method should calculate the MONTHLY wage
+            double monthlyWage = (hoursWorkedWeekly * 52 * hourlyWage) / 12;
+            return monthlyWage;
+        }
 
 
     }
